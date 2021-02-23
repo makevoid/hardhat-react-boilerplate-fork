@@ -8,15 +8,9 @@ In this repo I implemented some changes as I'm playing with the setup, backend p
 ### Changes:
 
 - Enabled Token contract
+- implemented `balanceOf()` 
+- implemented `transfer()` method
 - Added a basic UI to this repo (using Bulma.io CSS microframework)
-
-
-### WIP
-
-Adding ERC20 transfers and info (checkBalance()) as UI elements
-
-- implement `balanceOf()` (done)
-- implement `transfer()` method
 
 
 ### Enjoy
