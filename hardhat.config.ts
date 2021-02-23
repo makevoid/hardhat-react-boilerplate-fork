@@ -28,6 +28,7 @@ const config: HardhatUserConfig = {
   },
   networks: {
     hardhat: {
+      chainId: 1337,
       inject: false, // optional. If true, it will EXPOSE your mnemonic in your frontend code. Then it would be available as an "in-page browser wallet" / signer which can sign without confirmation.
       accounts: {
         mnemonic: "test test test test test test test test test test test junk", // test test test test test test test test test test test junk
@@ -49,7 +50,25 @@ const config: HardhatUserConfig = {
         version: "0.7.3",
         settings: {
           optimizer: {
-            enabled: true,
+            enabled: false,
+            runs: 50,
+          },
+        },
+      },
+      {
+        version: "0.6.0",
+        settings: {
+          optimizer: {
+            enabled: false,
+            runs: 50,
+          },
+        },
+      },
+      {
+        version: "0.6.2",
+        settings: {
+          optimizer: {
+            enabled: false,
             runs: 50,
           },
         },
